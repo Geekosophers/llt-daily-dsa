@@ -16,3 +16,4 @@ Daily picks of interesting DSA problems.
 
 
 ### JAVA Collection Hierarchy
+<img src="java-collection-hierarchy.jpg" width="100%" />
