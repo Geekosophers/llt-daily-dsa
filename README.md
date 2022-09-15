@@ -14,5 +14,11 @@ Daily picks of interesting DSA problems.
 #### Link To Question: https://leetcode.com/problems/maximum-subarray/
 
 
+### Day-3
+#### Difficulty: Easy
+#### Question Name: Two Sum
+#### Topic Tags: Array
+#### Link To Question: https://leetcode.com/problems/two-sum/
+
 ### JAVA Collection Hierarchy
 <img src="java-collection-hierarchy.jpg" width="100%" />
