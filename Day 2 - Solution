@@ -1,0 +1,32 @@
+class Solution {
+    public boolean binarySearch(int[] array,int target,int l, int r){
+        
+        if(l<=r){
+            int mid = (l+r)/2;
+            if(array[mid]==target) return true;
+            else if(array[mid]>target) return binarySearch(array,target,l,mid-1);
+            else return binarySearch(array,target,mid+1,r);
+        }
+        return false;
+    }
+    
+    public boolean findRow(int[][] matrix,int target,int l, int r,int colIndex){
+        
+        if(l<=r){
+            int mid = (l+r)/2;
+            if(matrix[mid][colIndex]==target || matrix[mid][0]==target) 
+                return true;
+            else if(matrix[mid][colIndex]>target && matrix[mid][0]<target) 
+                return binarySearch(matrix[mid],target,0,matrix[mid].length-1);
+            else if(matrix[mid][colIndex]>target) 
+                return findRow(matrix,target,l,mid-1,colIndex);
+            else if(matrix[mid][colIndex]<target) 
+                return findRow(matrix,target,mid+1,r,colIndex);
+        }
+        return false;
+    }
+    
+    public boolean searchMatrix(int[][] matrix, int target) {
+        return findRow(matrix,target,0,matrix.length-1,matrix[0].length-1);
+    }
+}
