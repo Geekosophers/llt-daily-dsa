@@ -1,0 +1,23 @@
+// space O(n)
+// time O(n)
+
+class Solution {
+    
+    public int sumOfLandR(int a, int b){
+        return a+b;
+    }
+    
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+        int curNum;
+        for(int i=0;i<nums.length;i++){
+            curNum = nums[i];
+            if(map.containsKey(curNum)){
+                return new int[] {map.get(curNum),i};
+            } else{
+                map.put((target-curNum),i);
+            }
+        }
+        return null;
+    }
+}
