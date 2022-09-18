@@ -1,3 +1,5 @@
+// contributed by anshul-16
+
 class Solution {
     public boolean binarySearch(int[] array,int target,int l, int r){
         
