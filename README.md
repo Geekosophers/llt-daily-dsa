@@ -6,6 +6,7 @@ Daily picks of interesting DSA problems.
 |1| Medium | Search in a 2-D matrix   | Binary search   |[Leetcode](https://leetcode.com/problems/search-a-2d-matrix/)| suchita-mehta|
 |2| Medium|Maximum Subarray|Array, Divide and Conquer, Dynamic Programming|[Leetcode](https://leetcode.com/problems/maximum-subarray/)|anshul-16|
 |3| Easy|Two Sum|Array|[Leetcode](https://leetcode.com/problems/two-sum/)|anshul-16|
+|4| Easy|Merge Sorted Array|Array, Sorting|[Leetcode](https://leetcode.com/problems/merge-sorted-array/?envType=study-plan&id=data-structure-i)|anshul-16|
 
 ### JAVA Collection Hierarchy
 <img src="java-collection-hierarchy.jpg" width="100%" />
