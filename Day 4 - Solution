@@ -1,0 +1,24 @@
+class Solution {
+
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int j = 0;
+        
+        // adding the elements from nums2 at the end of nums1
+        for(int i=m;i<m+n;i++){
+            nums1[i] = nums2[j];
+            j++;
+        }
+        
+        // insertion sort from index: m to index: m+n-1
+        for(int k=m;k<m+n;k++){
+            int i=k-1;
+            int key = nums1[k];
+            while(i>=0 && key<nums1[i]){
+                nums1[i+1] = nums1[i];
+                i--;
+            }
+            nums1[i+1] = key;
+        }
+        
+    }
+}
