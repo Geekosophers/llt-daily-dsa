@@ -1,0 +1,53 @@
+class Solution {
+    
+    public boolean areRowsValid(char[][] board, Set<Character> set){
+        for(int i=0;i<9;i++){
+            set.clear();
+            for(int j=0;j<9;j++){
+                if(set.contains(board[i][j])) 
+                    return false;
+                if(board[i][j]!='.') 
+                    set.add(board[i][j]);
+            }
+        }
+        return true;
+    }
+    
+    public boolean areColsValid(char[][] board, Set<Character> set){
+        for(int i=0;i<9;i++){
+            set.clear();
+            for(int j=0;j<9;j++){
+                if(set.contains(board[j][i])) 
+                    return false;
+                if(board[j][i]!='.') 
+                    set.add(board[j][i]);
+            }
+        }
+        return true;
+    }
+    
+    public boolean areBoxesValid(char[][] board, Set<Character> set){
+        for(int m=0;m<9;m+=3){
+            for(int n=0;n<9;n+=3){
+                set.clear();
+                for(int i=0;i<3;i++){
+                    for(int j=0;j<3;j++){
+                        if(set.contains(board[i+m][j+n])) 
+                            return false;
+                        else if(board[i+m][j+n]!='.') 
+                            set.add(board[i+m][j+n]);
+                    }
+                }
+            }
+        }
+        return true;
+    }
+    
+    public boolean isValidSudoku(char[][] board) {
+        Set<Character> set = new HashSet<>();
+        
+        return areRowsValid(board, set) &&
+            areColsValid(board,set) &&
+            areBoxesValid(board,set);
+    }
+}
