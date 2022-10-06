@@ -10,6 +10,7 @@ Daily picks of interesting DSA problems.
 |5| Easy|Best Time to Buy and Sell Stock|Array, Dynamic Programming|[Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|anshul-16|
 |6| ||||suchita-mehta|
 |7| Medium|Valid Sudoku|Array, Hash Table, Matrix|[Leetcode](https://leetcode.com/problems/valid-sudoku/)|anshul-16|
+|5| Easy|Bit Manupulation Topic|Bit Manupulation Topic|[Problem-1](https://leetcode.com/problems/single-number/) [Problem-2](https://leetcode.com/problems/reverse-bits/) [Problem-3](https://leetcode.com/problems/number-of-1-bits/)|anshul-16|
 
 ### JAVA Collection Hierarchy
 <img src="java-collection-hierarchy.jpg" width="100%" />
